@@ -13,7 +13,7 @@ disable-model-invocation: true
 
 ## Purpose
 
-Generate the boilerplate table-driven test framework for the specified callable. Covering the test case struct, table and runner.
+Generate the boilerplate table-driven test frameworks for the specified callable. Covering the test case struct, table and runner.
 Do not write any actual test cases. This skill produces the skeleton for the user to fill in.
 
 ## Local Test Guidance
@@ -33,9 +33,9 @@ Always check for testing standards in `AGENTS.MD`, `CLAUDE.MD`, existing skills,
 5. **Derive expected-output fields** from the return signature. For each return value, choose exact-match or a flexible assertion based on the type:
   - Deterministic value, e.g. no timestamps, generated IDs, pointers, etc..., should be exact-matched.
   - Non-deterministic value may require a flexible assertion, following existing guidance, language or codebase standards.
-6. **Assemble the skeleton**: test case specification struct; table (empty with a single `// TODO: add test cases` marker); runner setting up the test, executing the callable and validating the response and any covered dependency calls.
-7. **Do not implement any test cases.** Leave the table empty, with the `// TODO` marker.
-8. **Present the generated framework** to the user for review.
+6. **Assemble the skeleton**: for every test group define: test case specification struct; table (for new tests groups this is empty with a single `// TODO: add test cases` marker); runner setting up the test, executing the callable and validating the response and any covered dependency calls.
+7. **Implement the frameworks** 
+8. **Do not implement any additional test cases.** Leave new group's tables empty, with the `// TODO` marker.
 
 ## Notes
 
