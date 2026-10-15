@@ -50,6 +50,11 @@ Cover distinct *behaviours*, not every possible input combination.
 
 ## Output Format
 
+### Callable Purpose
+
+Brief outline of the purpose of the method based on the signature, context and implementation (if present). 
+Allows the user to verify understanding is correct.
+
 ### Covered
 
 Brief bullet list of the behavioural permutations already tested. No need to be exhaustive, just enough to show the current coverage is understood.
